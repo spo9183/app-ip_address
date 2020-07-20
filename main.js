@@ -94,6 +94,7 @@ function getIpv4MappedIpv6Address(ipv4) {
   return ipv6Address;
 }
 
+
 /*
   This section is used to test function and log any errors.
   We will make several positive and negative tests.
@@ -132,3 +133,8 @@ function main() {
     }
   }
 }
+
+/*
+  Call main to run it.
+*/
+main();
