@@ -11,7 +11,8 @@ const IPCIDR = require('ip-cidr');
  * @param {string} cidrStr - The IPv4 subnet expressed
  *                 in CIDR format.
  * @param {callback} callback - A callback function.
- * @return {object} (firstIpAddressObj) - An object containing string properties for the IPv4 and IPv6 addresses.
+ * @return {object} (firstIpAddressObj) - An object containing string 
+                   properties for the IPv4 and IPv6 addresses.
  */
 function getFirstIpAddress(cidrStr, callback) {
 
@@ -48,6 +49,7 @@ function getFirstIpAddress(cidrStr, callback) {
   // data as the second argument to the callback function.
   return callback(firstIpAddressObj, callbackError);
 }
+
 
 /**
  * Calculates an IPv4-mapped IPv6 address.
@@ -137,6 +139,7 @@ function main() {
     }
   }
 }
+
 
 /*
   Call main to run it.
